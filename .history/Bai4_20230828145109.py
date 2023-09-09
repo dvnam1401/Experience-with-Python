@@ -1,5 +1,0 @@
-values = input("Nhap vao gia tri: ")
-list = values.split(",")
-tuple = tuple(list)
-print('List : ', list)
-print('Tuple : ', tuple)
