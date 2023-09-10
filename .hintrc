@@ -11,6 +11,7 @@
           "-ms-filter"
         ]
       }
-    ]
+    ],
+    "create-element-svg": "off"
   }
 }
