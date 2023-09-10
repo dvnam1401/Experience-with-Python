@@ -97,12 +97,12 @@
 </div>
 {% endblock banner_slider %}
 {% block main-content %}
-<div class="row" style="width:100%">
+<div class="row">
   {% for product in products %}
   <div class="col-lg-3">
-    <img class="thumbnail" src="{{product.image.url}}" />
+    <img class="thumbnail" src="{% static 'app/images/placeholder.png' %}" />
     <div class="bot-element product">
-      <h6><strong>{{product.name}}</strong></h6>
+      <h6><strong></strong></h6>
       <hr />
       <button
         type="button"
