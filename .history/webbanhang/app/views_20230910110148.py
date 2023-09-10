@@ -7,12 +7,12 @@ from .models import *
 def home(request):
     products = Product.objects.all()
     context= {'product': products}
-    return render(request,'app/home.html',context)
+    return render(request, 'app/home.html', context)
 
 def cart(request):
     context= {}
-    return render(request,'app/cart.html',context)
+    return render(request, 'app/cart.html', context)
 
 def checkout(request):
     context={}
-    return render(request,'app/checkout.html',context)
+    return render(request, 'app/checkout.html', context)

@@ -1,6 +1,4 @@
-{% extends 'app/base.html' %} 
-{% load static %} 
-{% block banner_slider %}
+{% extends 'app/base.html' %} {% load static %} {% block banner_slider %}
 <div id="carouselExampleDark" class="carousel carousel-dark slide">
   <div class="carousel-indicators">
     <button
@@ -95,12 +93,10 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-{% endblock banner_slider %}
-{% block main-content %}
+{% endblock banner_slider %} {% block main-content %}
 <div class="row">
-  {% for product in products %}
   <div class="col-lg-4">
-    <img class="thumbnail" src="{% static 'app/images/placeholder.png' %}" />
+    <img class="thumbnail" src="{% static 'app/images/cow-ghee.png' %}" />
     <div class="bot-element product">
       <h6><strong>San pham</strong></h6>
       <hr />
@@ -110,14 +106,112 @@
         id=""
         class="btn btn-outline-secondary add-btn"
       >
-        Add to cart
+        Thêm vào giỏ hàng
       </button>
-      <a class="btn btn-outline-success" href="#">View</a>
+      <a class="btn btn-outline-success" href="#">Xem</a>
       <h4 style="display: inline-block; float: right">
-        <strong>200.000 vnd</strong>
+        <strong>200.000</strong>
       </h4>
     </div>
   </div>
-  {% endfor %}
+  <div class="col-lg-4">
+    <img class="thumbnail" src="{% static 'app/images/curd-total.png' %}" />
+    <div class="bot-element product">
+      <h6><strong>San pham</strong></h6>
+      <hr />
+      <button
+        type="button"
+        name=""
+        id=""
+        class="btn btn-outline-secondary add-btn"
+      >
+        Thêm vào giỏ hàng
+      </button>
+      <a class="btn btn-outline-success" href="#">Xem</a>
+      <h4 style="display: inline-block; float: right">
+        <strong>200.000</strong>
+      </h4>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <img class="thumbnail" src="{% static 'app/images/curd-premium.png' %}" />
+    <div class="bot-element product">
+      <h6><strong>Sản phẩm</strong></h6>
+      <hr />
+      <button
+        type="button"
+        name=""
+        id=""
+        class="btn btn-outline-secondary add-btn"
+      >
+        Thêm vào giỏ hàng
+      </button>
+      <a class="btn btn-outline-success" href="#">Xem</a>
+      <h4 style="display: inline-block; float: right">
+        <strong>200.000</strong>
+      </h4>
+    </div>
+  </div>
 </div>
+<div class="row">
+  <div class="col-lg-4">
+    <img class="thumbnail" src="{% static 'app/images/cow-ghee.png' %}" />
+    <div class="bot-element product">
+      <h6><strong>San pham</strong></h6>
+      <hr />
+      <button
+        type="button"
+        name=""
+        id=""
+        class="btn btn-outline-secondary add-btn"
+      >
+        Thêm vào giỏ hàng
+      </button>
+      <a class="btn btn-outline-success" href="#">Xem</a>
+      <h4 style="display: inline-block; float: right">
+        <strong>200.000</strong>
+      </h4>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <img class="thumbnail" src="{% static 'app/images/curd-total.png' %}" />
+    <div class="bot-element product">
+      <h6><strong>San pham</strong></h6>
+      <hr />
+      <button
+        type="button"
+        name=""
+        id=""
+        class="btn btn-outline-secondary add-btn"
+      >
+        Thêm vào giỏ hàng
+      </button>
+      <a class="btn btn-outline-success" href="#">Xem</a>
+      <h4 style="display: inline-block; float: right">
+        <strong>200.000</strong>
+      </h4>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <img class="thumbnail" src="{% static 'app/images/curd-premium.png' %}" />
+    <div class="bot-element product">
+      <h6><strong>Sản phẩm</strong></h6>
+      <hr />
+      <button
+        type="button"
+        name=""
+        id=""
+        class="btn btn-outline-secondary add-btn"
+      >
+        Thêm vào giỏ hàng
+      </button>
+      <a class="btn btn-outline-success" href="#">Xem</a>
+      <h4 style="display: inline-block; float: right">
+        <strong>200.000</strong>
+      </h4>
+    </div>
+  </div>
+</div>
+<br/>
+<br/>
 {% endblock main-content %}
