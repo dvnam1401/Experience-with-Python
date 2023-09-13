@@ -37,7 +37,7 @@ def checkout(request):
     return render(request, 'app/checkout.html', context)
 
 
-def update_item(request):
+def updateItem(request):
     data = json.loads(request.body)
     productID = data['productID']
     action = data['action']
