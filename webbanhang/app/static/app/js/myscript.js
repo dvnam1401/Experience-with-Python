@@ -28,34 +28,18 @@ $('#slider1, #slider2, #slider3').owlCarousel({
 $('.plus-cart').click(function () {
     var id = $(this).attr("pid").toString();
     var eml = this.parentNode.children[2]
-    // $.ajax({
-    //     type:"GET",
-    //     url:"/pluscart",
-    //     data:{
-    //         prod_id:id
-    //     },
-    //     success:function(data){
-    //         eml.innerText=data.quantity 
-    //         document.getElementById("amount").innerText=data.amount 
-    //         document.getElementById("totalamount").innerText=data.totalamount
-    //     }
-    // })
     $.ajax({
-        type: "GET",
-        url: "/pluscart",
-        data: {
-            prod_id: prod_id,
-            action: action,
+        type:"GET",
+        url:"/pluscart",
+        data:{
+            prod_id:id
         },
-        success: function (data) {
-            try {
-                var jsonData = JSON.parse(data);
-                // Handle your JSON data here...
-            } catch (error) {
-                console.error("Received non-JSON response: ", data);
-            }
+        success:function(data){
+            eml.innerText=data.quantity 
+            document.getElementById("amount").innerText=data.amount 
+            document.getElementById("totalamount").innerText=data.totalamount
         }
-    });
+    })
 })
 
 $('.minus-cart').click(function () {
