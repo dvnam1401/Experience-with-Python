@@ -14,8 +14,8 @@ for (i = 0; i < updateBtns.length; i++) {
 
 function updateUserOrder(productID, action) {
     console.log('user login');
-    let url = 'update_item/'
-    fetch(url, {
+    let urls = 'cart/update_item/'
+    fetch(urls, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -24,8 +24,6 @@ function updateUserOrder(productID, action) {
         body: JSON.stringify({ 'productID': productID, 'action': action }),
     })
         .then((response) => response.json())
-        .then((data) => {
-            console.log('data', data),
-                location.reload()
-        })
+        .then((data) => console.log('data', data),
+            location.reload())
 }

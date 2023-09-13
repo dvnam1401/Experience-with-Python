@@ -14,7 +14,7 @@ for (i = 0; i < updateBtns.length; i++) {
 
 function updateUserOrder(productID, action) {
     console.log('user login');
-    let url = 'update_item/'
+    let url = '/update_item/'
     fetch(url, {
         method: 'POST',
         headers: {
