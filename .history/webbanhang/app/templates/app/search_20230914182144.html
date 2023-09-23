@@ -1,0 +1,27 @@
+{% extends 'app/base.html' %} {% load static %} {% block cart_content %}
+<h5> Result search for {{searched}} </h5> </br>
+    <div class="row" style="width:100%">
+      {% for key in keys %}
+      <div class="col-lg-3">
+        <img class="thumbnail" src="{{key.ImageURL}}" />
+        <div class="bot-element key">
+          <h6><strong>{{key.name}}</strong></h6>
+          <hr />
+          <button data-product={{key.id}}
+          data-action="add"
+            type="button"
+            name=""
+            id=""
+            class="btn btn-outline-secondary add-btn update-cart"
+          >
+            Add to cart
+          </button>
+          <a class="btn btn-outline-success" href="#">View</a>
+          <h4 style="display: inline-block; float: right">
+            <strong>${{key.price | floatformat:2}}</strong>
+          </h4>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+{% endblock cart_content %}
